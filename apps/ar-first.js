@@ -28,7 +28,7 @@ document.body.appendChild(renderer.domElement);
 document.body.appendChild(
 
     ARButton.createButton(renderer,{
-        requiredFeatures: ['Test']
+        requiredFeatures: ['hit-test']
     })
 )
 const light = new THREE.HemisphereLight(0xffffff, 1);

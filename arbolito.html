@@ -9,8 +9,6 @@
             margin:0;
             overflow: hidden;
             font-family: Arial;
-             background: #000; 
-            color: white;
         }
         /*generamos el panel de usuario*/
         #panel{
@@ -18,7 +16,7 @@
             top: 10px;
             left: 10px;
             padding: 10px;
-            background: rgba(30, 30, 30, 0.8);
+            background: rgba(rgb(255, 255, 255), rgb(0, 131, 0), rgb(255, 255, 255));
             border-radius: 12px;
             width: 200px;
             color: rgb(255, 255, 255);
@@ -33,17 +31,11 @@
         }
         #panel boton{
             width: 100%;
-            padding: 8px;
-            margin-top: 6px;
+            margin-top: 5px;
+            padding: 6;
             border: none;
             border-radius: 6px;
             cursor: pointer;
-            background: #1e90ff;
-            color: white;
-            font-size: 14px;
-        }
-         #panel button:hover{
-            background: #1975d1;
         }
 
     </style>
@@ -59,25 +51,13 @@
         <input type="range" id="pointLight" min="0" max="3" step="0.1" value="1">
         <!--rotación animación-->
         <labe>Animación</labe>
-        <a href="parque.html">
-            <button>parque</button>
-        </a>
-
-        <a href="newmodel.html">
-            <button>newmodel</button>
-        </a>
-
-        <a href="arbolito.html">
-            <button>arbolito</button>
-        </a>
-
-        <a href="ar-final.html">
-        <button>ar-final</button>
-        </a>
-        
-
+        <button id="rotate">Desactivar/activar</button>
     </div>
 
-  
+    <!--librerias-->
+    <script src="js/three.min.js"></script>
+    <script src="js/GLTFLoader.js"></script> <!--correccion de mala escritura-->
+    <!--threejs -->
+    <script src="apps/arbolito.js"></script>
 </body>
 </html>
