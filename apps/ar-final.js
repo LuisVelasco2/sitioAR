@@ -32,7 +32,7 @@ function init() {
     controller.addEventListener('select', onSelect); // la funcion no puede ir con mayuscula
     scene.add(controller);
 
-    window.addEventListener('resize', onWindowResize);
+    //window.addEventListener('resize', onWindowResize);
 }
 
 function onSelect() {
